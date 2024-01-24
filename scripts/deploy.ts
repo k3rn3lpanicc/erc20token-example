@@ -5,7 +5,7 @@ const delay = (delayInms: number) => {
 };
 
 async function main() {
-  const initialSupply = 1000000000;
+  const initialSupply = 1e9;
   const token = await ethers.deployContract("ExmoduleToken", [initialSupply], {
     value: 0,
   });
@@ -33,6 +33,10 @@ async function main() {
       initialSupply
     ]
   });
+
+  console.log(
+    `[ ✅ ] Contract's source code verified on block explorer.`
+    );
 }
 
 main().catch((error) => {
