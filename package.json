@@ -1,0 +1,34 @@
+{
+  "name": "erc20token-example",
+  "version": "1.0.0",
+  "description": "a simple erc20/bep20 token",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:binance": "npx hardhat run --network bscTestnet ./scripts/deploy.ts",
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k3rn3lpanicc/erc20token-example.git"
+  },
+  "keywords": [
+    "erc20",
+    "bep20",
+    "smart-contracts"
+  ],
+  "author": "k3rn3lpanicc",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/k3rn3lpanicc/erc20token-example/issues"
+  },
+  "homepage": "https://github.com/k3rn3lpanicc/erc20token-example#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
