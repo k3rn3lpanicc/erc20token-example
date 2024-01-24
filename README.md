@@ -58,3 +58,5 @@ To run the tests simply run `npm run test`, the results should be like this:
 
   4 passing (2s)
 ```
+
+### Example deployed contract address: [0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2](https://testnet.bscscan.com/address/0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2)
