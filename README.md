@@ -15,9 +15,9 @@ Run `npm run compile` to compile the solidity contracts.
 
 First create a `.env` file in the root directory; it should contain these values:
 
-  - BINANCE_API_KEY : the api key for binance block explorer (you can fetch yours from https://testnet.bscscan.com), this api key is used to verify the contract after deployment
+  - `BINANCE_API_KEY` : the api key for binance block explorer (you can fetch yours from https://testnet.bscscan.com), this api key is used to verify the contract after deployment
   
-  - BINANCE_PRIVATE_KEY: your binance account's private key. this account is used to deploy the contract to chain.
+  - `BINANCE_PRIVATE_KEY`: your binance account's private key. this account is used to deploy the contract to chain.
 
 Then run this command: `npm run deploy:binance` and it would start building contracts, deployment and verification steps and you can relax till the job gets done. The results would be like this:
 
