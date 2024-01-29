@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "deploy:binance": "npx hardhat run --network bscTestnet ./scripts/deploy.ts",
+    "deployStake:binance": "npx hardhat run --network bscTestnet ./scripts/deployStaking.ts",
     "test": "npx hardhat test"
   },
   "repository": {
@@ -15,7 +16,8 @@
   "keywords": [
     "erc20",
     "bep20",
-    "smart-contracts"
+    "smart-contracts",
+    "staking"
   ],
   "author": "k3rn3lpanicc",
   "license": "GPL-3.0-or-later",
