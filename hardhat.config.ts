@@ -12,6 +12,10 @@ const config: HardhatUserConfig = {
       gasPrice: 20000000000,
       accounts: [process.env.BINANCE_PRIVATE_KEY as string]
     },
+    polygonMumbai: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY as string]
+    }
   },
   solidity: {
     version: "0.8.18",
@@ -26,6 +30,7 @@ const config: HardhatUserConfig = {
   etherscan:{
     apiKey:{
       bscTestnet: (process.env.BINANCE_API_KEY) as string,
+      polygonMumbai: (process.env.MUMBAI_API_KEY) as string
     },
   }
 };
