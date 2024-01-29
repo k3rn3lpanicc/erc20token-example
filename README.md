@@ -86,6 +86,8 @@ First create a `.env` file in the root directory; it should contain these values
 
 Then run this command: `npm run deployStake:binance` and it would start building contracts, deployment and verification steps and you can relax till the job gets done. The results would be like this:
 
+* Note: you can deploy to mumbai network by this command: `npm run deployStake:mumbai`
+
 ```bash
 ➜ npm run deployStake:binance
 
@@ -141,5 +143,6 @@ The reward amount:  31709791983n
 
 ---
 
-### Example deployed contract address: [0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2](https://testnet.bscscan.com/address/0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2)
-### Example deployed staking contract address: [0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c](https://testnet.bscscan.com/address/0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c)
+### Example deployed contract address on binance: [0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2](https://testnet.bscscan.com/address/0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2)
+### Example deployed staking contract address on binance: [0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c](https://testnet.bscscan.com/address/0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c)
+### Example deployed staking contract address on mumbai: [0xE1d112A19f657FB00720522937e89b93d90f8F04](https://mumbai.polygonscan.com/address/0xE1d112A19f657FB00720522937e89b93d90f8F04)
