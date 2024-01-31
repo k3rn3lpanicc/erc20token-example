@@ -8,6 +8,7 @@
     "deploy:binance": "npx hardhat run --network bscTestnet ./scripts/deploy.ts",
     "deployStake:binance": "npx hardhat run --network bscTestnet ./scripts/deployStaking.ts",
     "deployStake:mumbai": "npx hardhat run --network polygonMumbai ./scripts/deployStaking.ts",
+    "deployNFT:mumbai": "npx hardhat run --network polygonMumbai ./scripts/deployNFT.ts",
     "test": "npx hardhat test"
   },
   "repository": {

@@ -3,7 +3,6 @@ import { expect } from "chai";
 
 describe("Exmodules", function(){
     async function deployContract() {
-        const fee = 100;
         const [owner,firstUser,secondUser] = await ethers.getSigners();
         const Token = await ethers.getContractFactory("ExmoduleToken");
         const token = await Token.deploy(1e9);
