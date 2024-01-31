@@ -143,6 +143,78 @@ The reward amount:  31709791983n
 
 ---
 
+# ERC721 NFT contract
+
+## Usage
+
+### Run the tests 
+
+Run `npm run test` in the project folder, the results should be like this:
+
+```bash
+➜ npm run test
+
+> erc20token-example@1.0.0 test
+> npx hardhat test
+
+
+
+  Exmodules
+    Deployment
+      ✔ Should deploy the contract (4305ms)
+      ✔ Should have the right initial value (1e9) (60ms)
+      ✔ Should transfer 1 token to another person (59ms)
+      ✔ Should mint 100 more tokens (52ms)
+
+  Exmodules NFT contract
+    Deployment
+      ✔ Should deploy the contract
+      ✔ Should have the right owner (47ms)
+      ✔ Should Mint 1 NFT (91ms)
+      ✔ Should not Mint nft from a user rather than owner (80ms)
+      ✔ Should mint 1 nft and check the uri (67ms)
+
+  Exmodules Staking
+    Deployment
+      ✔ Should deploy the contract (62ms)
+      ✔ Should have the right initial value (1e9) (40ms)
+      ✔ Should transfer 1 token to another person (54ms)
+      ✔ Should mint 100 more tokens (44ms)
+      ✔ First user should be able to stake 1 tokens (64ms)
+      ✔ First user should be able to unstake 1 tokens (70ms)
+The reward amount:  31709791983n
+      ✔ First user should be able to stake 1 tokens and receive rewards after 1 seconds (1079ms)
+
+
+  16 passing (6s)
+```
+
+### Deploy to mumbai
+
+Run `npm run deployNFT:mumbai` to deploy the nft contract to mumbai chain. the result should be like this:
+
+```bash
+➜ npm run deployNFT:mumbai
+
+> erc20token-example@1.0.0 deployNFT:mumbai
+> npx hardhat run --network polygonMumbai ./scripts/deployNFT.ts
+
+[ ☕️ ] Deploying the Exmodules NFT token to chain ...
+[ ✅ ] Exmodule NFT token deployed to: 0x09fb0f7A1edFae09F52BEC2e16CB309FfaDc72DD with name: ExToken and symbol: eft
+[ ☕️ ] Waiting 20 seconds ...
+[ ☕️ ] Verifying the contract's source code on block explorer ...
+Successfully submitted source code for contract
+contracts/ExModulesNFT.sol:ExModulesNFT at 0x09fb0f7A1edFae09F52BEC2e16CB309FfaDc72DD
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract ExModulesNFT on the block explorer.
+https://mumbai.polygonscan.com/address/0x09fb0f7A1edFae09F52BEC2e16CB309FfaDc72DD#code
+[ ✅ ] Contract's source code verified on block explorer.
+```
+
+---
+
 ### Example deployed contract address on binance: [0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2](https://testnet.bscscan.com/address/0x958b6EfEa4f3C05cB42378E4E6B8d0a3fa591ef2)
 ### Example deployed staking contract address on binance: [0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c](https://testnet.bscscan.com/address/0x29aE535bc25d69Fd299eD0211a5E4b245eaB5e0c)
 ### Example deployed staking contract address on mumbai: [0xE1d112A19f657FB00720522937e89b93d90f8F04](https://mumbai.polygonscan.com/address/0xE1d112A19f657FB00720522937e89b93d90f8F04)
+### Example deployed nft contract address on mumbai: [0x09fb0f7A1edFae09F52BEC2e16CB309FfaDc72DD](https://mumbai.polygonscan.com/address/0x09fb0f7A1edFae09F52BEC2e16CB309FfaDc72DD)
